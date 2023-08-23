@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.login-body {
+    background-color: #1d2b3a;
+}
+
+.login-form h1 {
+    color: #fff;
+}
+.login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #1d2b3a;
+}
+
+
+.login-form input{
+    border-radius: 6px;
+}
+
+#login-btn {
+    margin: 10px;
+}
+
+.div-input {
+    position: relative;
+    width: 250px;
+}
+.div-input input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid gray;
+    background-color: #1d2b3a;
+    color: #fff;
+    outline: none;
+    font-size: 1em;
+}
+
+.div-input span {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.253);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.div-input input:valid ~ span,
+.div-input input:focus ~ span {
+    color: #00dfc4;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background-color: #1d2b3a;
+    border-left: 1px solid #00dfc4;
+    border-right: 1px solid #00dfc4;
+    letter-spacing: 0.2em;
+}
+.div-input:nth-child(2) input:valid ~ span,
+.div-input:nth-child(2) input:focus ~ span {
+    background: #00dfc4;
+    color: #1d2b3a;
+    border-radius: 2px;
+}
+.div-input input:valid,
+.div-input input:focus {
+    border: 1px solid #00dfc4;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #ffffff;
+  -webkit-box-shadow: 0 0 0px 40rem #1d2b3a inset;
+}
+
+#login-btn {
+    width: 80px;
+    height: 35px;
+    background-color: #fff; /* White background */
+    color: #000;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
+
+.div-signup button {
+    background-color: #1d2b3a;
+    color: #fff;
+    border: 1px;
+}
+
+.div-signup a {
+    color:#00dfc4;
+}
+.div-signup span {
+    color: #fff;
+}

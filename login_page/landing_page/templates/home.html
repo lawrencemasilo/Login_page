@@ -1,9 +1,7 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
 <body>
     {% csrf_token %}
     {% if user.is_authenticated %}
