@@ -49,9 +49,7 @@ This Django web application provides a user authentication system that allows us
 
       ```bash
       cd your-directory/venv
-   
-      On Windows:
-      mkdir your-directory\venv
+
    5. Activate the virtual environment:
 
       On Windows:
@@ -69,9 +67,6 @@ This Django web application provides a user authentication system that allows us
       ```bash
       cd Login_page
    
-      On Windows:
-      mkdir Login_page
-
    8. Install dependencies:
       ```bash
       pip install -r requirements.txt
