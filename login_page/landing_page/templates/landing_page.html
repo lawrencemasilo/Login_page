@@ -5,7 +5,7 @@
 <body class="login-body">
 <form class="login-form" method="post" action="{% url 'login_user' %}">
     {% csrf_token %}
-    <h1 class="login-h1">Login</h1>
+    <h1 class="login-h1">User Login</h1>
     <div class="div-input">
         <input type="text" id="username" name="username" required="required">
         <span>Username</span>
@@ -15,11 +15,17 @@
         <span>Password</span>
     </div>
     <div class="div-btn">
-        <button id="login-btn" type="submit">Login</button>
+        <button id="login-btn" type="submit">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Login
+        </button>
     </div>
     <div class="div-signup">
         <span>Don't have an account?</span>
-        <button type="button"><a href="/signup">Sign up</a></button>
+        <button type="button"><a href="/signup" style="text-decoration:none">Sign up</a></button>
     </div>
 </form>
 </body>

@@ -7,14 +7,16 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-.login-body {
+
+body {
     background-color: #1d2b3a;
 }
 
-.login-form h1 {
+.signup-h1 {
     color: #fff;
 }
-.login-form {
+
+.signup-from {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,16 +26,11 @@
     background-color: #1d2b3a;
 }
 
-
-.login-form input{
-    border-radius: 6px;
-}
-
-
 .div-input {
     position: relative;
     width: 250px;
 }
+
 .div-input input {
     padding: 10px;
     width: 100%;
@@ -42,6 +39,7 @@
     color: #fff;
     outline: none;
     font-size: 1em;
+    border-radius: 6px;
 }
 
 .div-input span {
@@ -54,7 +52,6 @@
     text-transform: uppercase;
     transition: 0.5s;
 }
-
 .div-input input:valid ~ span,
 .div-input input:focus ~ span {
     color: #00dfc4;
@@ -84,37 +81,14 @@ input:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0px 40rem #1d2b3a inset;
 }
 
-/*.div-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 30px;
-    background-color: #1d2b3a;
-    width: 250px;
-}*/
-
-/*#login-btn {
-    width: 100%;
-    height: 35px;
-    background-color: #031321;
-    color: #2196f3;
-    color: #00dfc4;
-    border: 1px;
-    border-radius: 3px;
-    font-size: 20px;
-    overflow: hidden;
-    transition: 0.2s;
-}*/
-
-#login-btn:hover {
+#signup-btn:hover {
     color: #255784;
     background: #00dfc4;
     box-shadow: 0 0 10px #00dfc4, 0 0 40px #00dfc4, 0 0 80px #00dfc4;
     transition-delay: 0.5s;
 }
 
-#login-btn {
+#signup-btn {
     position: relative;
     display: inline-block;
     /*padding: 15px 30px;*/
@@ -131,6 +105,7 @@ input:-webkit-autofill:focus {
     border: 1px ;
     border-radius: 6px;
 }
+
 .div-btn span {
     position: absolute;
     display: block;
@@ -189,24 +164,4 @@ input:-webkit-autofill:focus {
     bottom: 100%;
     transition: 0.4s;
     transition-delay: 0.4s;
-}
-
-.div-signup button {
-    background-color: transparent;
-    color: #fff;
-    border: 1px;
-    padding: 2px;
-}
-
-.div-signup a {
-    color:#00dfc4;
-    margin-left: 5px;
-}
-
-.div-signup span {
-    color: #fff;
-}
-.div-signup {
-    display: flex;
-    width: 250px;
 }

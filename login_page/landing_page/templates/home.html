@@ -1,12 +1,22 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
 <body>
-    {% csrf_token %}
-    {% if user.is_authenticated %}
-    <h1>Welcome {{ user.username }}</h1>
-    <button type="submit"><a href="/signout">signout</a></button>
-    {% endif %}
+    <div class="div-home">
+        {% csrf_token %}
+        {% if user.is_authenticated %}
+        <h1>Welcome {{ user.username }}</h1>
+        <div class="div-btn">
+            <button id="signout-btn" type="submit"><a href="/signout" style="text-decoration:none">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                signout
+            </a></button>
+        </div>
+        {% endif %}
+    </div>
 </body>
 </html>
