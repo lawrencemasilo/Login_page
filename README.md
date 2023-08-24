@@ -30,61 +30,63 @@ This Django web application provides a user authentication system that allows us
 
 ## Installation
 
-1. Navigate to a directory of your choice/create new directory:
+   1. Navigate to a directory of your choice/create new directory:
 
-   ```bash
-   cd your-empty-directory
+      ```bash
+      cd your-empty-directory
 
-2. Install a Virtual Environment:
+   2. Install a Virtual Environment:
 
-   ```bash
-   pip install virtualenv
+      ```bash
+      pip install virtualenv
 
-3. Create the virtual environment:
+   3. Create the virtual environment:
 
-   ```bash
-   python -m venv venv
+      ```bash
+      python -m venv venv
 
-4. Navigate to the venv:
+   4. Navigate to the venv:
 
-   ```bash
-   cd your-directory\venv
+      ```bash
+      cd your-directory/venv
+   
+      On Windows:
+      mkdir your-directory\venv
+   5. Activate the virtual environment:
 
-5. Activate the virtual environment:
-
-   On Windows:
-   ```bash
-   Scripts\activate
+      On Windows:
+      ```bash
+      Scripts\activate
 
 
-6. Clone the repository:
+   6. Clone the repository into venv directory:
 
-   ```bash
-   git clone https://github.com/yourusername/your-django-login-project.git
+      ```bash
+      git clone https://github.com/lawrencemasilo/Login_page.git
 
-7. Navigate to the project directory:
+   7. Navigate to the project directory:
 
-   ```bash
-   cd Login_page
-   On Windows:
-   ```bash
-   mkdir Login_page
+      ```bash
+      cd Login_page
+   
+      On Windows:
+      mkdir Login_page
 
-8. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
+   8. Install dependencies:
+      ```bash
+      pip install -r requirements.txt
 
-9. Apply Database Migrations:
-   ```bash
-   python manage.py migrate
+   9. Apply Database Migrations:
 
-10. Start the Development Server::
+      ```bash
+      python manage.py migrate
 
-   ```bash
-   python manage.py runserver
+   10. Start the Development Server:
+    
+      python manage.py runserver
 
 ## Usage
-Access the application in your web browser at http://127.0.0.1:8000/login/.
+Access the application in your web browser at http://127.0.0.1:8000/login/
 
 1. Login: Use existing credentials to log in.
 
