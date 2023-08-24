@@ -65,7 +65,7 @@ This Django web application provides a user authentication system that allows us
    7. Navigate to the project directory:
 
       ```bash
-      cd Login_page
+      cd Login_page/login_page
    
    8. Install dependencies:
       ```bash
